@@ -1,0 +1,1 @@
+<span class="badge text-white @if($data->admin){{ 'badge-info' }}@else{{ 'badge-success' }}@endif" style="font-size: 10px;">{{ strtoupper($data->role()) }}</span>

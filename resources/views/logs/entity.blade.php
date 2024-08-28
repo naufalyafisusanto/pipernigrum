@@ -1,0 +1,1 @@
+<span class="badge text-white @if($data->entity){{ 'badge-success' }}@else{{ 'badge-warning' }}@endif" style="font-size: 10px;">{{ strtoupper($data->entity()) }}</span>

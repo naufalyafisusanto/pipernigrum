@@ -1,0 +1,1 @@
+<a href={{ route('station.index').'?id='.$data->id }} target="_blank">{{ $data->name }}</a>
