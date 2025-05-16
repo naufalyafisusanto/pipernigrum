@@ -51,7 +51,12 @@ class AuthController extends Controller
                     'last_login' => date('Y-m-d H:i:s')
                 ]);
             Log::channel('login')->info("SUCCESS|{$host}|{$ip}|{$username}");
-            return redirect()->intended()->with('loginSuccess', Auth::user()->name);
+            $intended = redirect()->intended()->getTargetUrl();
+            if (str_contains($intended, 'naganoharamirai') && !str_contains($intended, '/pipernigrum')) {
+                $intended .= '/pipernigrum';
+                $intended = preg_replace('/^http:/', 'https:', $intended);
+            }
+            return redirect($intended)->with('loginSuccess', Auth::user()->name);
         }
         RateLimiter::increment($ip);
         $password = $request->input('password');   
@@ -96,7 +101,12 @@ class AuthController extends Controller
                     'last_login' => date('Y-m-d H:i:s')
                 ]);
             Log::channel('expo')->info("SUCCESS|{$host}|{$ip}|{$username}|{$name}|{$type}|{$identity}");
-            return redirect()->intended()->with('loginSuccess', Auth::user()->name);
+            $intended = redirect()->intended()->getTargetUrl();
+            if (str_contains($intended, 'naganoharamirai') && !str_contains($intended, '/pipernigrum')) {
+                $intended .= '/pipernigrum';
+                $intended = preg_replace('/^http:/', 'https:', $intended);
+            }
+            return redirect($intended)->with('loginSuccess', Auth::user()->name);
         }
         RateLimiter::increment($ip);
         $password = $request->input('password');

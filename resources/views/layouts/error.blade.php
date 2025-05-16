@@ -70,7 +70,7 @@
                         </div>
                     <div class="footer fixed-bottom">
                         <div class="footer-custom my-4 mb-5">
-                            <img src="/assets/img/pipernigrum.png" alt="Piper Nigrum Logo" height="80px">
+                            <img src="{{ asset('/assets/img/pipernigrum.png') }}" alt="Piper Nigrum Logo" height="80px">
                             Copyright &copy; 2024<br><a href="javascript:;"> Piper Nigrum - Universitas Diponegoro</a>
                         </div>
                     </div>

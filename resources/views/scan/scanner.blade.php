@@ -72,7 +72,7 @@
 @endsection
 
 @push('script')  
-    <script src="/assets/js/scan/html5-qrcode.min.js"></script>
+    <script src="{{ asset('/assets/js/scan/html5-qrcode.min.js') }}"></script>
 
     <script>
         var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;

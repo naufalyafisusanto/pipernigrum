@@ -3,16 +3,16 @@
         <div class="sidebar-brand mb-3" style="height: 150px;">
             <a href="javascript:;">
                 <span class="d-flex flex-column">
-                    <div class="mt-4"><img src="/assets/img/pipernigrum.png" alt="Piper Nigrum Logo" height="100px"></div>
+                    <div class="mt-4"><img src="{{ asset('/assets/img/pipernigrum.png') }}" alt="Piper Nigrum Logo" height="100px"></div>
                     <div class="mt-1" style="height: 20px;"><h6 style="color: #404040;">Piper Nigrum</h6></div>
                 </span>
             </a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
-            <a href="javascript:;"><img src="/assets/img/pipernigrum.png" alt="Piper Nigrum Logo" height="25px"></a>
+            <a href="javascript:;"><img src="{{ asset('/assets/img/pipernigrum.png') }}" alt="Piper Nigrum Logo" height="25px"></a>
         </div>
         <ul class="sidebar-menu">
-            <li class=@if($page == 'dashboard'){{ 'active' }}@endif><a class="nav-link" href="/dashboard"><i class="fas fa-desktop"></i><span class="mt-0">Dashboard</span></a></li>
+            <li class=@if($page == 'dashboard'){{ 'active' }}@endif><a class="nav-link" href={{ route('dashboard.index') }}><i class="fas fa-desktop"></i><span class="mt-0">Dashboard</span></a></li>
             <li class="nav-item dropdown @if ($page == 'station') active clicked @endif">
                 <a class="nav-link has-dropdown"><i class="fas fa-wifi"></i><span class="mt-0">Station</span></a>
                 <ul class="dropdown-menu">
@@ -40,14 +40,14 @@
                 </ul>
             </li>
             @can('admin')
-                <li class=@if($page == 'scan'){{ 'active' }}@endif><a class="nav-link" href="/scan"><i class="fas fa-qrcode"></i><span class="mt-0">Scan</span></a></li>
+                <li class=@if($page == 'scan'){{ 'active' }}@endif><a class="nav-link" href={{ route('scan.index') }}><i class="fas fa-qrcode"></i><span class="mt-0">Scan</span></a></li>
             @endcan
-            <li class=@if(strpos($page, 'manage') !== false){{ 'active' }}@endif><a class="nav-link" href="/manage"><i class="fas fa-sliders"></i><span class="mt-0">Manage</span></a></li>
+            <li class=@if(strpos($page, 'manage') !== false){{ 'active' }}@endif><a class="nav-link" href={{ route('manage.index') }}><i class="fas fa-sliders"></i><span class="mt-0">Manage</span></a></li>
             @can('admin')
-                <li class=@if($page == 'download'){{ 'active' }}@endif><a class="nav-link" href="/download"><i class="fas fa-download"></i><span class="mt-0">Download</span></a></li>
-                <li class=@if($page == 'users'){{ 'active' }}@endif><a class="nav-link" href="/users"><i class="fas fa-users"></i><span class="mt-0">Users</span></a></li>
+                <li class=@if($page == 'download'){{ 'active' }}@endif><a class="nav-link" href={{ route('download.index') }}><i class="fas fa-download"></i><span class="mt-0">Download</span></a></li>
+                <li class=@if($page == 'users'){{ 'active' }}@endif><a class="nav-link" href={{ route('users.index') }}><i class="fas fa-users"></i><span class="mt-0">Users</span></a></li>
             @endcan
-            <li class="@if($page == 'logs'){{ 'active' }}@endif pb-5"><a class="nav-link" href="/logs"><i class="fas fa-clock-rotate-left"></i><span class="mt-0">Logs</span></a></li>
+            <li class="@if($page == 'logs'){{ 'active' }}@endif pb-5"><a class="nav-link" href={{ route('logs.index') }}><i class="fas fa-clock-rotate-left"></i><span class="mt-0">Logs</span></a></li>
         </ul>
     </aside>
 </div>

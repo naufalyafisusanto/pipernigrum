@@ -21,8 +21,8 @@ return [
     ],
   ],
   'domains' => [
-    '192.168.22.1' => '192.168.22.1',
-    'pipernigrum.local' => 'pipernigrum.local',
-    'pipernigrum.my.id' => 'pipernigrum.my.id',
+    '192.168.20.20' => '192.168.20.20',
+    'naganoharamirai.local' => 'naganoharamirai.local',
+    'naganoharamirai.my.id' => 'naganoharamirai.my.id',
   ],
  ];

@@ -319,9 +319,9 @@
 @endsection
 
 @push('script')
-    <script src="/assets/js/station/chart.js"></script>
-    <script src="/assets/js/station/luxon.js"></script>
-    <script src="/assets/js/station/chartjs-adapter-luxon.js"></script>
+    <script src="{{ asset('/assets/js/station/chart.js') }}"></script>
+    <script src="{{ asset('/assets/js/station/luxon.js') }}"></script>
+    <script src="{{ asset('/assets/js/station/chartjs-adapter-luxon.js') }}"></script>
 
     <script>
         var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;

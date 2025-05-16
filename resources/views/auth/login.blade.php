@@ -32,7 +32,7 @@
                     <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
                         <div class="card card-primary">
                             <div class="d-flex flex-column justify-content-center align-items-center">
-                                <div class="mt-4"><img src="/assets/img/pipernigrum.png" alt="Piper Nigrum Logo" height="120px"></div>
+                                <div class="mt-4"><img src="{{ asset('/assets/img/pipernigrum.png') }}" alt="Piper Nigrum Logo" height="120px"></div>
                                 <div class="mt-1" style="height: 20px;"><h6 style="color: #404040;">Piper Nigrum</h6></div>
                             </div>
                             <div class="card-body">
@@ -40,12 +40,12 @@
                                     @csrf
                                     <div class="form-group">
                                         <label for="username">Username</label>
-                                        <input id="username" type="text" class="form-control" name="username" tabindex="1" required autofocus minlength="8">
+                                        <input id="username" type="text" class="form-control" name="username" tabindex="1" required autofocus minlength="8" autocomplete="username">
                                         <div class="invalid-feedback">Username must be at least 8 characters long.</div>
                                     </div>
                                     <div class="form-group">
                                         <label for="password" class="control-label">Password</label>
-                                        <input id="password" type="password" class="form-control" name="password" tabindex="2" required minlength="8">
+                                        <input id="password" type="password" class="form-control" name="password" tabindex="2" required minlength="8" autocomplete="current-password">
                                         <i class="fa-solid fa-lightbulb-slash show-password" onmousedown="showPassword()" onmouseup="hidePassword()" onmouseleave="hidePassword()" ontouchstart="showPassword()" 
                                         ontouchend="hidePassword()"></i>
                                         <div class="invalid-feedback">Password must be at least 8 characters long.</div>

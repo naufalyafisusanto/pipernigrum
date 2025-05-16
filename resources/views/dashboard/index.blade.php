@@ -1,8 +1,8 @@
 @extends('layouts.main')
 
 @push('style')
-    <link rel="stylesheet" href="/assets/css/manage/dataTables.bootstrap4.css">
-    <link rel="stylesheet" href="/assets/css/manage/select.bootstrap4.css">
+    <link rel="stylesheet" href="{{ asset('/assets/css/manage/dataTables.bootstrap4.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/manage/select.bootstrap4.css') }}">
     
     <style>
         .dropdown-menu.select-action.none-hover:hover {
@@ -197,10 +197,10 @@
 @endsection
 
 @push('script')
-    <script src="/assets/js/dashboard/chart.js/dist/Chart.min.js"></script>
-    <script src="/assets/js/manage/datatables/media/js/jquery.dataTables.min.js"></script>
-    <script src="/assets/js/manage/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="/assets/js/manage/datatables.net-select-bs4/js/select.bootstrap4.min.js"></script>
+    <script src="{{ asset('/assets/js/dashboard/chart.js/dist/Chart.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/manage/datatables/media/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/manage/datatables.net-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/manage/datatables.net-select-bs4/js/select.bootstrap4.min.js') }}"></script>
 
     <script>
         var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;

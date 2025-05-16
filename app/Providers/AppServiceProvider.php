@@ -25,13 +25,13 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        if (str_contains(Arr::get($_SERVER, 'HTTP_HOST', ''), 'naganoharamirai')) {
+            URL::forceScheme('https');
+        }
+
         Validator::extend('no_spaces', function ($attribute, $value, $parameters, $validator) {
             return strpos($value, ' ') === false;
         });
-
-        if (str_ends_with(Arr::get($_SERVER,'HTTP_HOST'), 'pipernigrum.my.id')) {
-            URL::forceScheme('https');
-        }
 
         Gate::define('admin', function (User $user) {
             return (bool)$user->admin;

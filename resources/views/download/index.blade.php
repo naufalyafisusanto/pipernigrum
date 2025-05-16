@@ -1,10 +1,10 @@
 @extends('layouts.main')
 
 @push('stylesheet')
-    <link rel="stylesheet" href="/assets/css/download/daterangepicker.css">
-    <link rel="stylesheet" href="/assets/css/download/select2.min.css">
-    <link rel="stylesheet" href="/assets/css/download/dataTables.bootstrap4.css">
-    <link rel="stylesheet" href="/assets/css/download/select.bootstrap4.css">
+    <link rel="stylesheet" href="{{ asset('/assets/css/download/daterangepicker.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/download/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/download/dataTables.bootstrap4.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/download/select.bootstrap4.css') }}">
 @endpush
 
 @push('style')
@@ -119,11 +119,11 @@
 @endsection
 
 @push('script')
-    <script src="/assets/js/download/daterangepicker.js"></script>
-    <script src="/assets/js/download/select2.full.min.js"></script>
-    <script src="/assets/js/download/datatables/media/js/jquery.dataTables.min.js"></script>
-    <script src="/assets/js/download/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="/assets/js/download/datatables.net-select-bs4/js/select.bootstrap4.min.js"></script>
+    <script src="{{ asset('/assets/js/download/daterangepicker.js') }}"></script>
+    <script src="{{ asset('/assets/js/download/select2.full.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/download/datatables/media/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/download/datatables.net-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/download/datatables.net-select-bs4/js/select.bootstrap4.min.js') }}"></script>
 
     <script>
         $('.daterange-cus').daterangepicker({
