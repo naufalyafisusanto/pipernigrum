@@ -9,25 +9,25 @@ A Laravel-based IoT monitoring system for black pepper (*Piper nigrum* L.) rotar
 ## Screenshots
 
 <p align="center">
-  <img src="./screenshots/dashboard.png" alt="Dashboard" width="800">
+  <img src="./screenshots/dashboard.png" alt="Dashboard" height="300">
   <br>
   <em>Dashboard - Homepage of the monitoring system</em>
 </p>
 
 <p align="center">
-  <img src="./screenshots/station.png" alt="Station Monitoring" width="800">
+  <img src="./screenshots/station.png" alt="Station Monitoring" height="300">
   <br>
   <em>Station Monitoring - Real-time monitoring interface</em>
 </p>
 
 <p align="center">
-  <img src="./screenshots/scan.png" alt="Station Registration" width="800">
+  <img src="./screenshots/scan.png" alt="Station Registration" height="400">
   <br>
   <em>Station Registration - QR code scanning for new station</em>
 </p>
 
 <p align="center">
-  <img src="./screenshots/edit-params.png" alt="Parameter Settings" width="800">
+  <img src="./screenshots/edit-params.png" alt="Parameter Settings" width="400">
   <br>
   <em>Parameter Settings - Configure rotary dryer operation parameters</em>
 </p>
