@@ -8,16 +8,15 @@ A Laravel-based IoT monitoring system for black pepper (*Piper nigrum* L.) rotar
 
 ## Screenshots
 
-<p align="center">
-  <img src="./screenshots/dashboard.png" alt="Dashboard" height="300">
-  <br>
-  <em>Dashboard - Homepage of the monitoring system</em>
-</p>
+<div align="center">
+  <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+    <img src="./screenshots/dashboard.png" alt="Dashboard" height="270">
+    <img src="./screenshots/station.png" alt="Station Monitoring" height="270">
+    <br>
+    <p><em>Dashboard interface</em></p>
+  </div>
+</div>
 
-<p align="center">
-  <img src="./screenshots/station.png" alt="Station Monitoring" height="300">
-  <br>
-  <em>Station Monitoring - Real-time monitoring interface</em>
 </p>
 
 <p align="center">
