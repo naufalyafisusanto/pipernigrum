@@ -10,32 +10,19 @@ A Laravel-based IoT monitoring system for black pepper (*Piper nigrum* L.) rotar
 
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
-    <img src="./screenshots/dashboard.png" alt="Dashboard" height="270">
-    <img src="./screenshots/station.png" alt="Station Monitoring" height="270">
-    <br>
-    <p><em>Dashboard interface</em></p>
+    <img src="./screenshots/dashboard.png" alt="Dashboard" height="290">
+    <img src="./screenshots/station.png" alt="Station Monitoring" height="290">
+  </div>
+
+  <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+    <img src="./screenshots/scan.png" alt="Station Registration" height="350">
+  </div>
+
+  <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+    <img src="./screenshots/edit-params.png" alt="Parameter Settings" height="242"> 
+    <img src="./screenshots/logs.png" alt="System Logs" height="242">
   </div>
 </div>
-
-</p>
-
-<p align="center">
-  <img src="./screenshots/scan.png" alt="Station Registration" height="400">
-  <br>
-  <em>Station Registration - QR code scanning for new station</em>
-</p>
-
-<p align="center">
-  <img src="./screenshots/edit-params.png" alt="Parameter Settings" width="400">
-  <br>
-  <em>Parameter Settings - Configure rotary dryer operation parameters</em>
-</p>
-
-<p align="center">
-  <img src="./screenshots/logs.png" alt="System Logs" width="800">
-  <br>
-  <em>System Logs - Track all system activities and operations</em>
-</p>
 
 ## System Architecture
 
